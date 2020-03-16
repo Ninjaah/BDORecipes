@@ -59,9 +59,9 @@ Ingredient1-5: Amount and ingredient name which are needed to cook the dish
         "ingredient4": "1 Ghormeh Sabzi",
         "ingredient5": "2 Honey Wine"
     }
-]
-  ```
-  
+  ] 
+```
+ 
 **Post new Recipe**
 ----
   Sends a new recipe into the database. It is sent as a single string, fields divided by '-'.
