@@ -1,5 +1,6 @@
 # BDORecipes
 Small API project for school. Cooking and Alchemy recipes for Black Desert Online.
+
 **Front-end usage**
 ----
   Returns data about all recipes that have the searchword in any ingredient columns. Partial words work aswell. Not Case sensitive. The site gets all recipes from the backend and then shows the right ones to the user for better performance.
