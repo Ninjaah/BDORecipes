@@ -5,7 +5,7 @@ Small API project for school. Cooking recipes for Black Desert Online. Future fe
 
 **Front-end usage**
 ----
-  Returns data about all recipes that have the searchword in any ingredient columns. Partial words work aswell. Not Case sensitive. The site gets all recipes from the backend and then shows the right ones to the user for better performance. Recipes can be added using "Add Recipe" and "Submit" buttons, but only the name and ingredients can be provided. You need to provide atleast the name and 2 ingredients.
+  Returns data about all recipes that have the searchword in any ingredient columns. Partial words work aswell. Not Case sensitive. The site gets all recipes from the backend and then shows the right ones to the user for better performance. Recipes can be added using "Add Recipe" and "Submit" buttons, but only the name and ingredients can be provided. You need to provide atleast the name and 2 ingredients. After the recipe is submitted to the database, the front-end gets all recipes so the new recipe can be seen right away without needing to refresh the page.
   
 Name: Dish name  
 Effect: Effect when eaten   
