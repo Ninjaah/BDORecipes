@@ -2,9 +2,172 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>BDO Recipes</title>
+    <link rel="stylesheet" href="../public/stylesheets/style.css">
+    <script src="../public/javascripts/index.js"></script>
 </head>
 <body>
-$END$
+<div id="searchbar">Ingredient:
+    <input id="search" list="ingredient"> <button onclick="recipeWindow()">Search</button><button onclick="showAddmenu()">Add recipe</button><br>
+<p class="add">New item:</p> <input id="1" class="add" placeholder="Dish name"><input id="2" class="add" placeholder="Ingredient 1"><input id="3" class="add" placeholder="Ingredient 2"><input id="4" class="add" placeholder="Ingredient 3"><input id="5" class="add" placeholder="Ingredient 4"><input id="6" class="add" placeholder="Ingredient 5"><button onclick="postRecipe()" class="add">Submit</button>
+</div>
+<div id="content">
+    <table id="recipes">
+        <tr>
+            <th>Product name</th>
+            <th>Effect</th>
+            <th>XP</th>
+            <th>Ingredient 1</th>
+            <th>Ingredient 2</th>
+            <th>Ingredient 3</th>
+            <th>Ingredient 4</th>
+            <th>Ingredient 5</th>
+        </tr>
+    </table>
+
+<div id="listIngredients">
+    <ul><li>	Fish	</li>
+    <li>	Honey	</li>
+    <li>	Egg	</li>
+    <li>	Flour	</li>
+    <li>	Dough	</li>
+    <li>	Fruit	</li>
+    <li>	Starch	</li>
+    <li>	High-Quality Carrot	</li>
+    <li>	Meat	</li>
+    <li>	Aloe	</li>
+    <li>	Vegetable	</li>
+    <li>	Reptile Meat	</li>
+    <li>	Seafood	</li>
+    <li>	Teff Flour	</li>
+    <li>	Top-Quality Cooking Honey	</li>
+    <li>	Special Carrot	</li>
+    <li>	Fragrant Jerky	</li>
+    <li>	Fig	</li>
+    <li>	Snake Meat	</li>
+    <li>	Bird Meat	</li>
+    <li>	Plants	</li>
+    <li>	Soft Whale Meat	</li>
+    <li>	Oyster	</li>
+    <li>	Rainbow Button Mushroom	</li>
+    <li>	Coconut	</li>
+    <li>	Lobster	</li>
+    <li>	Shrimp	</li>
+    <li>	Ground Bird Meat	</li>
+    <li>	Pistachio	</li>
+    <li>	Grilled Sausage	</li>
+    <li>	Date Palm	</li>
+    <li>	Soft Bread	</li>
+    <li>	Gargoyle Leg	</li>
+    <li>	Gazelle Hind Leg	</li>
+    <li>	Oatmeal	</li>
+    <li>	Scorpion Meat	</li>
+    <li>	Tea With Fine Scent	</li>
+    <li>	Blue Whale Meat	</li>
+    <li>	Fried Bird	</li>
+    <li>	Freekeh Snake Stew	</li>
+    <li>	Fugitive Khalk's Horn	</li>
+    <li>	Lion Meat	</li>
+    <li>	Teff Bread	</li>
+    <li>	Dark Pudding	</li>
+    <li>	Cheese Gratin	</li>
+    <li>	Ham Sandwich	</li>
+    <li>	Prawn Salad	</li>
+    <li>	Coconut Cocktail	</li>
+    <li>	Rainbow Button Mushroom Sandwich	</li>
+    <li>	Teff Sandwich	</li>
+    <li>	Special Drieghan Meal	</li>
+    <li>	Yak Meat	</li>
+    <li>	Mamott Meat	</li>
+    <li>	Llama Meat	</li>
+    <li>	Skewered Llama Cheese Melt	</li>
+    <li>	Bracken	</li>
+    <li>	Mineral Water	</li>
+    <li>	Essence of Liquor	</li>
+    <li>	Sugar	</li>
+    <li>	Base Sauce	</li>
+    <li>	Milk	</li>
+    <li>	Cream	</li>
+    <li>	Onion	</li>
+    <li>	Red Sauce	</li>
+    <li>	Pepper	</li>
+    <li>	Butter	</li>
+    <li>	Fortune Teller Mushroom	</li>
+    <li>	Garlic	</li>
+    <li>	Hot Pepper	</li>
+    <li>	Full-bodied Exotic Herbal Wine	</li>
+    <li>	White Sauce	</li>
+    <li>	Dressing	</li>
+    <li>	Freekeh	</li>
+    <li>	Exotic Herbal Wine	</li>
+    <li>	Vinegar	</li>
+    <li>	Salt	</li>
+    <li>	Deep Frying Oil	</li>
+    <li>	Olive Oil	</li>
+    <li>	Paprika	</li>
+    <li>	Teff	</li>
+    <li>	Cheese	</li>
+    <li>	Pickled Vegetables	</li>
+    <li>	Honey Wine	</li>
+    <li>	Teff Flour Dough	</li>
+    <li>	Grilled Scorpion	</li>
+    <li>	Meat Croquette	</li>
+    <li>	Milk Tea	</li>
+    <li>	Meat Pie	</li>
+    <li>	Steamed Prawn	</li>
+    <li>	Coconut Pasta	</li>
+    <li>	King of Jungle Hamburg	</li>
+    <li>	Serendia Meal	</li>
+    <li>	Stir-Fried Bracken	</li>
+    <li>	Leavening Agent	</li>
+    <li>	Cooking Wine	</li>
+    <li>	Cinnamon	</li>
+    <li>	Star Anise	</li>
+    <li>	Nutmeg	</li>
+    <li>	Smoked Fish Steak	</li>
+    <li>	Fish Fillet Salad	</li>
+    <li>	Honeycomb Cookie	</li>
+    <li>	Pan-Fried Oyster	</li>
+    <li>	Coconut Fried Fish	</li>
+    <li>	Fig Pie	</li>
+    <li>	Couscous	</li>
+    <li>	Mediah Meal	</li>
+    <li>	Roast Mamott	</li>
+    <li>	Fruit Wine	</li>
+    <li>	Cabbage	</li>
+    <li>	Blood 2	</li>
+    <li>	Lean Meat Salad	</li>
+    <li>	Stir-Fried Vegetables	</li>
+    <li>	Cheese Pie	</li>
+    <li>	Boiled Bird Eggs	</li>
+    <li>	Butter-Roasted Lobster	</li>
+    <li>	Meat Stew	</li>
+    <li>	Ancient Cron Spice	</li>
+    <li>	Ghormeh Sabzi	</li>
+    <li>	Fruit and Vegetable Salad	</li>
+    <li>	Beer	</li>
+    <li>	Meat Pasta	</li>
+    <li>	Steak	</li>
+    <li>	Rainbow Button Mushroom Cheese Melt	</li>
+    <li>	Date Palm Wine	</li>
+</ul>
+
+</div>
+</div>
 </body>
+
+<datalist id="ingredient">
+    <option value="Fish">
+    <option value="Meat">
+    <option value="Fruit">
+    <option value="Egg">
+    <option value="Onion">
+    <option value="Honey">
+    <option value="Aloe">
+    <option value="Beer">
+    <option value="Milk">
+    <option value="Cheese">
+    <option value="Seafood">
+</datalist>
+
 </html>
