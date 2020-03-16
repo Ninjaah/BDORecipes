@@ -4,6 +4,7 @@ Small API project for school. Cooking and Alchemy recipes for Black Desert Onlin
 **Front-end usage**
 ----
   Returns data about all recipes that have the searchword in any ingredient columns. Partial words work aswell. Not Case sensitive. The site gets all recipes from the backend and then shows the right ones to the user for better performance. Recipes can be added using "Add Recipe" and "Submit" buttons, but only the name and ingredients can be provided. You need to provide atleast the name and 2 ingredients.
+  
 Name: Dish name  
 Effect: Effect when eaten   
 XP: XP gained when cooked    
@@ -11,7 +12,7 @@ Ingredient1-5: Amount and ingredient name which are needed to cook the dish
 
 **Get Recipes**
 ----
-  Returns json data about recipes where the searched ingredient is.
+  Returns json data about recipes where the searched ingredient is. If the parameter is left empty, it will return all recipes.
 
 * **URL**
 
