@@ -1,5 +1,5 @@
 # BDORecipes
-Small API project for school. Cooking and Alchemy recipes for Black Desert Online.
+Small API project for school. Cooking recipes for Black Desert Online. Future features would be calculators for the amount of ingredients needed, profit etc. Could also add Alchemy recipes, which would work exactly like cooking recipes with different data. Could also add info where to find the ingredients, and market prices for ingredients and prepared dishes.
 
 ![FrontPage](https://raw.githubusercontent.com/Ninjaah/BDORecipes/master/public/images/CaptureProjekti.PNG)
 
