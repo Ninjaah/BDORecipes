@@ -134,5 +134,6 @@ Ingredient1-5: Amount and ingredient name which are needed to cook the dish
   ```
  
  **Database**
+ ----
  I used MariaDB for the database. The database has two columns that are not shown in the API/Frontend, id and level. The level means what skill level of cooking is required to make the dish. This data would be useful in a future version.
 ![Database](https://raw.githubusercontent.com/Ninjaah/BDORecipes/master/public/images/projektinTaulu.PNG)
