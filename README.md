@@ -61,7 +61,7 @@ Ingredient1-5: Amount and ingredient name which are needed to cook the dish
     }
   ] 
 ```
-``` 
+```
  
 **Post new Recipe**
 ----
@@ -87,6 +87,4 @@ Ingredient1-5: Amount and ingredient name which are needed to cook the dish
 
 * **Sample Call:**
 
-  `
-  http://localhost:8081/post_recipe/?newrecipe=Ananaspizza-ananas-pohja-kinkku-tomaatti-juusto
-  `
+  ` http://localhost:8081/post_recipe/?newrecipe=Ananaspizza-ananas-pohja-kinkku-tomaatti-juusto `
